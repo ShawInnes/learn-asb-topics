@@ -2,13 +2,21 @@
   "name": "messaging",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "produce": "tsx apps/producer.ts",
+    "consume": "tsx apps/consumer.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^10.9.1"
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.6.2"
+  },
+  "dependencies": {
+    "@azure/service-bus": "^7.9.3",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "typescript": "^5.3.3"
   }
 }

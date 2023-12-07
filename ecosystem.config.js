@@ -2,16 +2,32 @@ module.exports = {
   apps: [
     {
       name: "producer",
-      cwd: "apps",
-      script : "producer.ts",
+      cwd: "build",
+      script: "apps/producer.ts",
       env: {
         NODE_ENV: "production",
       },
     },
     {
-      name: "consumer1",
-      cwd: "apps",
-      script : "consumer.ts",
+      name: "consumer-all",
+      cwd: "build",
+      script: "apps/consumer-all.ts",
+      env: {
+        NODE_ENV: "production",
+      },
+    },
+    {
+      name: "consumer-male",
+      cwd: "build",
+      script: "apps/consumer-male.ts",
+      env: {
+        NODE_ENV: "production",
+      },
+    },
+    {
+      name: "consumer-female",
+      cwd: "build",
+      script: "apps/consumer-female.ts",
       env: {
         NODE_ENV: "production",
       },

@@ -1,0 +1,12 @@
+{
+   "compilerOptions": {
+      "target": "ES2015",
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "module": "CommonJS",
+      "allowSyntheticDefaultImports": true
+   },
+   "include": [
+      "apps/*.ts"
+   ]
+}

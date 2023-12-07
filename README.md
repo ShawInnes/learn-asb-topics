@@ -17,6 +17,6 @@ pm2 stop
 TL;DR:
 Queues and Topics are similar when a sender sends messages, but messages are processed differently by a receiver. A queue can have only one consumer, whereas a topic can have multiple subscribers.
 
-![Azure Service Bus Queue](queue.png)
+![Azure Service Bus Queue](docs/images/queue.png)
 
-![Azure Service Bus Topic](topic.png)
+![Azure Service Bus Topic](docs/images/topic.png)
