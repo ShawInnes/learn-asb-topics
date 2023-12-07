@@ -24,12 +24,12 @@ const connectionString =
 const topicName = process.env.TOPIC_NAME || "<topic name>";
 
 var people: any[] = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "./people.json"), "utf-8")
+  fs.readFileSync(path.resolve(__dirname, "../data/people.json"), "utf-8")
 );
 
 console.log("starting producer");
 
-cron.schedule("*/10 * * * * *", async () => {
+cron.schedule("*/5 * * * * *", async () => {
   const sbClient = new ServiceBusClient(connectionString);
   const sender = sbClient.createSender(topicName);
 

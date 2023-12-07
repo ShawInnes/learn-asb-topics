@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "produce": "tsx apps/producer.ts",
-    "consume": "tsx apps/consumer.ts",
+    "build": "tsc",
+    "start": "tsc && pm2 start",
+    "stop": "pm2 stop all",
+    "monitor": "pm2 monit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
