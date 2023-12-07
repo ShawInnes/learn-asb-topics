@@ -31,8 +31,8 @@ The included bicep template will create the following resources:
 
 * Azure ServiceBus Namespace
 * Azure ServiceBus Topic
-* Subscription consumer-male - Rule to filter on `Gender = 'Male'`
-* Subscription consumer-female - Rule to Filter on `Gender = 'Female'`
+* Subscription consumer-male - Rule to filter on `gender = 'male'`
+* Subscription consumer-female - Rule to Filter on `gender = 'female'`
 * Subscription consumer-all - No Rule/Filter
 
 
@@ -51,6 +51,19 @@ npm install
 npm run start
 npm run monitor
 ```
+
+**Producer**
+
+![Producer](docs/images/producer.png)
+
+**Consumers**
+
+![Sample Screenshot](docs/images/monitor-1.png)
+
+![Consumer - All](docs/images/consumer-all.png)
+
+![Consumer - Femail](docs/images/consumer-female.png)
+
 
 ### Cleanup Running Instances
 
